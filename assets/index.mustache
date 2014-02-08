@@ -10,6 +10,30 @@
     <script type="text/javascript" src="/jquery.easing.js"></script>
     <script type="text/javascript" src="/script.js"></script>
     <meta name="viewport" content="user-scalable=no, width=620" />
+    {{^mac}}
+    <style type="text/css">
+    .project-description {
+      font-weight: 300;
+    }
+    .contact-header {
+      font-weight: 300;
+    }
+    ::-webkit-input-placeholder { /* WebKit browsers */
+      font-weight: 300;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      font-weight: 300;
+    }
+
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+      font-weight: 300;
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+      font-weight: 300;
+    }
+    </style>
+    {{/mac}}
   </head>
   <body>
     <div id="header">
