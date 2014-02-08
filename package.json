@@ -1,0 +1,10 @@
+{
+  "name": "jonloeb.com",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "3.4.x",
+    "coffee-script": "1.6.x",
+    "mustache": "0.8.1",
+    "sendmail": "0.2.0"
+  }
+}
