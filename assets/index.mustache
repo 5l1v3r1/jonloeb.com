@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Jon Loeb</title>
+    <link rel="stylesheet" href="fonts.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="/jquery.js"></script>
+    <script type="text/javascript" src="/jquery-ui.js"></script>
+    <script type="text/javascript" src="/jquery.easing.js"></script>
+    <script type="text/javascript" src="/script.js"></script>
+    <meta name="viewport" content="user-scalable=no, width=620" />
+  </head>
+  <body>
+    <div id="header">
+      <div id="header-icon"></div>
+      <div id="header-dots">
+        {{#pages}}
+        <div class="dot dothover" style="background-color: {{color}}" onclick="window.jumpTo('{{class}}')">
+        </div>
+        {{/pages}}
+        <div class="dot dothover" style="background-color: #9b59b6" onclick="window.jumpTo('contact', '')">
+        </div>
+      </div>
+    </div>
+    <div id="pages">
+      {{#pages}}
+      <div class="box project-{{class}}" style="background-color: {{color}}">
+        <div class="box-content">
+          <img src="images/{{image}}" height="300" class="project-image" />
+          <h1 class="project-title">{{name}}</h1>
+          <span class="project-description">
+            {{description}}
+          </span>
+          <center>
+            {{#enabled}}
+            <table class="go-button go-button-hover" onclick="window.open('{{url}}', '_blank')">
+            {{/enabled}}
+            {{^enabled}}
+            <table class="go-button">
+            {{/enabled}}
+              <tr sty/e="height: 100%"><td style="height: 100%; color: {{color}}">
+                {{#enabled}}
+                TAKE ME THERE
+                {{/enabled}}
+                {{^enabled}}
+                COMING SOON
+                {{/enabled}}
+              </td></tr>
+            </table>
+          </center>
+        </div>
+      </div>
+      {{/pages}}
+      <div class="box contact" style="background-color: #9b59b6">
+        <div class="box-content">
+          <h1 class="contact-header">contact me</h1>
+          <!-- bbbcbd -->
+          <input class="contact-input" id="name" placeholder="your name"></input>
+          <input class="contact-input" id="email" placeholder="your email"></input>
+          <textarea class="contact-text" id="message" placeholder="your message"></textarea>
+          <center>
+            <table class="go-button go-button-hover" onclick="window.sendMessage()" id="message-button">
+              <tr sty/e="height: 100%"><td style="height: 100%; color: #9b59b6">
+                SEND MESSAGE
+              </td></tr>
+            </table>
+          </center>
+        </div>
+      </div>
+    </div>
+    <table class="footer">
+      <tr><td><center>
+        Jon Loeb - {{year}}
+      </center></td></tr>
+    </table>
+  </body>
+</html>

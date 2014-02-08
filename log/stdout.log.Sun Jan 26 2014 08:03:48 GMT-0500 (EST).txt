@@ -1,0 +1,96 @@
+mx resolved:  [ { exchange: 'mx6.me.com.akadns.net', priority: 10 },
+  { exchange: 'mx3.me.com.akadns.net', priority: 10 },
+  { exchange: 'mx5.me.com.akadns.net', priority: 10 },
+  { exchange: 'mx2.me.com.akadns.net', priority: 10 },
+  { exchange: 'mx1.me.com.akadns.net', priority: 10 },
+  { exchange: 'mx4.me.com.akadns.net', priority: 10 } ]
+mx resolved:  [ { exchange: 'mx1.comcast.net', priority: 5 },
+  { exchange: 'mx2.comcast.net', priority: 5 } ]
+MX connection created:  mx1.comcast.net
+MX connection created:  mx6.me.com.akadns.net
+recv me.com>220 st11p00mm-smtpin012.mac.com -- Server ESMTP (Oracle Communications Messaging Server 7u4-27.08(7.0.4.27.7) 64bit (built Aug 22 2013))
+send me.com>EHLO jonloeb.com
+recv me.com>250-st11p00mm-smtpin012.mac.com
+recv me.com>250-8BITMIME
+recv me.com>250-PIPELINING
+recv me.com>250-CHUNKING
+recv me.com>250-DSN
+recv me.com>250-ENHANCEDSTATUSCODES
+recv me.com>250-EXPN
+recv me.com>250-HELP
+recv me.com>250-XADR
+recv me.com>250-XSTA
+recv me.com>250-XCIR
+recv me.com>250-XGEN
+recv me.com>250-XLOOP 4EC28D0A9E6B369C6B12D47D786C7ABC
+recv me.com>250-ETRN
+recv me.com>250-NO-SOLICITING
+recv me.com>250 SIZE 0
+send me.com>MAIL FROM:<jon@jonloeb.com>
+recv comcast.net>220 imta08.westchester.pa.mail.comcast.net comcast ESMTP server ready
+send comcast.net>EHLO jonloeb.com
+recv me.com>250 2.5.0 Address Ok.
+send me.com>RCPT TO:<jon.loeb@me.com>
+recv comcast.net>250-imta08.westchester.pa.mail.comcast.net hello [198.74.59.95], pleased to meet you
+recv comcast.net>250-HELP
+recv comcast.net>250-SIZE 36700160
+recv comcast.net>250-ENHANCEDSTATUSCODES
+recv comcast.net>250-8BITMIME
+recv comcast.net>250 OK
+send comcast.net>MAIL FROM:<jon@jonloeb.com>
+recv comcast.net>250 2.1.0 <jon@jonloeb.com> sender ok
+send comcast.net>RCPT TO:<alexnichol@comcast.net>
+recv comcast.net>250 2.1.5 <alexnichol@comcast.net> recipient ok
+send comcast.net>DATA
+recv comcast.net>354 enter mail, end with "." on a line by itself
+sending mail From: jon@jonloeb.com
+To: jon.loeb@me.com, alexnichol@comcast.net
+Subject: Contact Form from Carol
+MIME-Version: 1.0
+Message-ID: <1390760658922jonloeb.com>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+RW1haWw6IENhcm9sb3JlbnN0ZWluQGNvbWNhc3QubmV0DQoNCkNvb2wgc2l0ZQ==
+send comcast.net>From: jon@jonloeb.com
+To: jon.loeb@me.com, alexnichol@comcast.net
+Subject: Contact Form from Carol
+MIME-Version: 1.0
+Message-ID: <1390760658922jonloeb.com>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+RW1haWw6IENhcm9sb3JlbnN0ZWluQGNvbWNhc3QubmV0DQoNCkNvb2wgc2l0ZQ==
+send comcast.net>
+send comcast.net>.
+recv comcast.net>250 2.0.0 JiQJ1n02P23GrU608iQKdo mail accepted for delivery
+send comcast.net>QUIT
+recv comcast.net>221 2.0.0 imta08.westchester.pa.mail.comcast.net comcast closing connection
+send comcast.net>
+recv me.com>250 2.1.5 jon.loeb@me.com OK.
+send me.com>DATA
+recv me.com>354 Enter mail, end with a single ".".
+sending mail From: jon@jonloeb.com
+To: jon.loeb@me.com, alexnichol@comcast.net
+Subject: Contact Form from Carol
+MIME-Version: 1.0
+Message-ID: <1390760658922jonloeb.com>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+RW1haWw6IENhcm9sb3JlbnN0ZWluQGNvbWNhc3QubmV0DQoNCkNvb2wgc2l0ZQ==
+send me.com>From: jon@jonloeb.com
+To: jon.loeb@me.com, alexnichol@comcast.net
+Subject: Contact Form from Carol
+MIME-Version: 1.0
+Message-ID: <1390760658922jonloeb.com>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+RW1haWw6IENhcm9sb3JlbnN0ZWluQGNvbWNhc3QubmV0DQoNCkNvb2wgc2l0ZQ==
+send me.com>
+send me.com>.
+recv me.com>250 2.5.0 Ok, envelope id 0N0000GXFTSJZFC0@st11p00mm-smtpin012.mac.com
+send me.com>QUIT
+recv me.com>221 2.3.0 Bye received. Goodbye.
+send me.com>

@@ -1,0 +1,252 @@
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+*:focus {
+    outline: 0;
+}
+
+.ui-effects-wrapper {
+  display:inline;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  font-weight: 100;
+  margin: 0;
+  background-color: white;
+  color: #FFF;
+}
+
+/** Header **/
+
+#header {
+  z-index: 1;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(245, 245, 245, 0.9);
+  
+  -moz-user-select: none; 
+  -khtml-user-select: none; 
+  -webkit-user-select: none; 
+  -o-user-select: none; 
+}
+
+@media (max-width: 364px) {
+  #header {
+    width: 364px;
+    left: calc(50% - 182px);
+  }
+}
+
+#header-icon {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  left: 10px;
+  background: transparent url('images/logo.png');
+  background-size: 100%;
+}
+
+#header-dots {
+  position: absolute;
+  height: 64px;
+  top: calc(50% - 32px);
+  right: 20px;
+}
+
+.dot {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  position: relative;
+  float: left;
+  background-color: transparent;
+  margin-top: 18px;
+  margin-left: 15px;
+  
+  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transition: transform 0.25s;
+  -webkit-transition: -webkit-transform 0.25s; /* Safari */
+
+  -moz-user-select: none; 
+  -khtml-user-select: none; 
+  -webkit-user-select: none; 
+  -o-user-select: none; 
+}
+
+.dothover:hover {
+  transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+}
+
+/** Projects **/
+
+#pages {
+  margin-top: 100px;
+}
+
+.box {
+  z-index: 0;
+  width: 100%;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+
+.box-content {
+  width: 600px;
+  position: absolute;
+  left: calc(50% - 300px);
+  display: block;
+  text-align: center;
+}
+
+.project-image {
+  margin-top: 50px;
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.project-title {
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.project-description {
+  display: block;
+  width: 600px;
+}
+
+.go-button {
+  width: 280px;
+  height: 70px;
+  font-size: 32px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  margin-top: 50px;
+  
+  -moz-user-select: none; 
+  -khtml-user-select: none; 
+  -webkit-user-select: none; 
+  -o-user-select: none; 
+}
+
+.go-button-hover:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.go-button td {
+  text-align: center;
+  font-weight: 300;
+}
+
+/** Custom Styling **/
+
+.project-macheads .project-image {
+  border-radius: 4px;
+}
+
+/** Concact **/
+
+.contact-header {
+  font-weight: 100;
+  font-size: 50px;
+}
+
+.contact-input {
+  border-radius: 10px;
+  border: none;
+  height: 44px;
+  width: 270px;
+  
+  padding-left: 10px;
+  padding-right: 10px;
+  
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.contact-text {
+  width: calc(100% - 20px);
+  height: 300px;
+  resize: none;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 18px;
+  padding: 10px 10px 10px 10px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #bbbcbd;
+  font-weight: 100;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #bbbcbd;
+  font-weight: 100;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #bbbcbd;
+  font-weight: 100;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #bbbcbd;
+  font-weight: 100;
+}
+
+#email {
+  float: right;
+}
+
+#name {
+  float: left;
+}
+
+/** Footer **/
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: #252628;
+}
+
+/** Compatibility **/
+
+@media screen and (max-device-width: 600px) {
+  .project-description {
+    font-weight: 300;
+  }
+  .contact-header {
+    font-weight: 300;
+  }
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    font-weight: 300;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-weight: 300;
+  }
+
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-weight: 300;
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    font-weight: 300;
+  }
+}
+

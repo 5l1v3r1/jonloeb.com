@@ -1,0 +1,10 @@
+
+/www/jonloeb/server/node_modules/sendmail/sendmail.js:117
+            log.error('fail to connect ' + domain);
+            ^
+ReferenceError: log is not defined
+  at Socket.<anonymous> (/www/jonloeb/server/node_modules/sendmail/sendmail.js:117:13)
+  at Socket.EventEmitter.emit (events.js:95:17)
+  at net.js:441:14
+  at process._tickCallback (node.js:415:13)
+
