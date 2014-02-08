@@ -55,20 +55,15 @@ body {
 #header-dots {
   position: absolute;
   height: 64px;
-  top: calc(50% - 32px);
+  top: calc(50% - 30px);
   right: 20px;
 }
 
 .dot {
   cursor: pointer;
-  width: 30px;
-  height: 30px;
-  border-radius: 30px;
   position: relative;
   float: left;
   background-color: transparent;
-  margin-top: 18px;
-  margin-left: 15px;
   
   transform: scale(1, 1);
   -webkit-transform: scale(1, 1);
