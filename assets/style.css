@@ -44,18 +44,12 @@ body {
 
 #header-icon {
   position: absolute;
-  width: 80px;
-  height: 80px;
-  top: 10px;
-  left: 10px;
   background: transparent url('images/logo.png');
   background-size: 100%;
 }
 
 #header-dots {
   position: absolute;
-  height: 64px;
-  top: calc(50% - 30px);
   right: 20px;
 }
 
@@ -82,10 +76,6 @@ body {
 }
 
 /** Projects **/
-
-#pages {
-  margin-top: 100px;
-}
 
 .box {
   z-index: 0;
@@ -130,7 +120,10 @@ body {
   -moz-user-select: none; 
   -khtml-user-select: none; 
   -webkit-user-select: none; 
-  -o-user-select: none; 
+  -o-user-select: none;
+  
+  transition: background-color 0.2s;
+  -webkit-transition: background-color 0.2s;
 }
 
 .go-button-hover:hover {
